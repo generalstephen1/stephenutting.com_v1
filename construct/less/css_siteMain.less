@@ -1,0 +1,246 @@
+@import (reference) "include.less";
+
+
+
+#focusArea{
+  max-width: @maxPageWidth;
+}
+header{
+  height: @headerHeight;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  left: 0;
+  // overflow: hidden;
+  color: @text-dark;
+  background-color: @default-extraDark-grey;
+  .transition(@duration:0.4s, @ease:ease-out);
+  background-image: url("../img/img_headerBG.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.headerLockup{
+  margin-top: 3em;
+}
+
+#headerTitleContainer{
+  // float:left;
+  // margin: 0 -20%;s
+  margin-right: -100px;
+  color: @offWhiteCustom;
+}
+.headerCopy{
+  display: inline-block;
+  float:right;
+}
+.headerTitle, .headerSubtitle {
+  position: relative;
+  text-align: right;
+  color: #ffffff;
+}
+.headerTitle {
+  font-size: 3rem;
+}
+.headerSubtitle{
+  font-size: 1.5rem;
+}
+#globalLogoLrg {
+  float: right;
+}
+
+
+.menuBtn{
+  background-color: @offWhiteCustom;
+  height: @collapsedHeaderHeight;
+  text-align: center;
+  line-height: @collapsedHeaderHeight;
+  opacity: 0.9;
+  cursor: pointer;
+  position: relative;
+
+  .transition(@duration:0.4s, @ease:ease-out);
+
+  &:hover {
+    // opacity: 0.8;
+    background-color: white;
+
+    .contactExpand{
+      right: 0;
+    }
+  }
+}
+
+.contactBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+.textCurser{
+  cursor: text;
+}
+
+.contactExpand {
+
+  .transition();
+  text-align: right;
+  position: absolute;
+  background-color: @default-extraDark-grey;
+  top: 100%;
+  right: -500%;
+  padding: 1em;
+  overflow: hidden;
+  min-width: 15em;
+  color: white;
+
+  p{
+    padding: 0;
+    margin: 0.1em;
+
+
+    &.hoverRed:hover {
+      color: @logo-red
+    }
+  }
+}
+
+
+
+#siteMain{
+  margin-top: @headerHeight + 2;
+}
+
+.projHomeImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.introduction{
+  text-align: center;
+}
+
+.skillModule {
+  float: left;
+  margin: 0 1%;
+}
+.skillname{
+  font-size: 0.7rem;
+}
+.skillSet{
+   .skill, h2{
+     width: 85%;
+     margin-left: 7%;
+     display: inline-block;
+   }
+  span {
+    margin-top: 6px;
+    p, .inlSpan {
+      margin: 0;
+      display: inline-block;
+      float: left;
+    }
+    .inlSpan {
+      float: right;
+      img{
+        width: 9px;
+        height: 9px;
+        margin-bottom: 7px;
+        margin-left: 4px;
+      }
+    }
+  }
+  h2{
+    text-align: center;
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+#footer{
+  height: @headerHeight;
+  margin-top:  10em;
+  background-color: @default-extraDark-grey;
+  background-image: url("../img/img_headerBG.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  .s4{
+    overflow: hidden;
+    float:left;
+    height: 100%;
+    text-align: center;
+    margin: 0 1.3%;
+    //padding-top: 30px;
+  }
+
+  .footerImage{
+    margin: 20%;
+    height: auto;
+    width: 14em;
+  }
+
+  .backupContent{
+    display: none;
+  }
+
+}
+.socialIcon-container{
+  width: 68%;
+  height: 68%;
+  margin: 25% 16%;
+}
+
+
+.socialIcon img  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  .transition();
+}
+.socialIcon_hover{
+  width: 48%;
+  height: 48%;
+  position: absolute;
+  left: 26%;
+  top: 26%;
+  opacity: 0;
+  .transition();
+
+  &.redBg {background-color: @logo-red;}
+  &.whiteBg {background-color: white;}
+  &.blackBg {background-color: black;}
+}
+.socialIcon .primaryIcon{
+  opacity: 1;
+}
+.socialIcon .secondaryIcon{
+  opacity: 0;
+}
+.socialIcon:hover {
+  // .primaryIcon{   opacity: 0;  }
+  .secondaryIcon,
+  .socialIcon_hover {   opacity: 1;  }
+}
+
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

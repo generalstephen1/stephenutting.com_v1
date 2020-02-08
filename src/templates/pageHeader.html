@@ -1,0 +1,58 @@
+<header id="globalHeader">
+	<div class="container">
+
+    <!--(bake-start _if="!isProject")-->
+		<!-- <a href="/stephenutting.com/construct/">
+			<div class="menuBtn col s4 topset-0"><p>View Work</p></div>
+		</a> -->
+		<div class="col s4 topset-0 center"></div>
+
+		<div class="col s4 offset-s4 topset-0 center">
+			<a href="{{imgPrefix}}index.html">
+				<img id="globalLogoSml" src="" data-src="{{imgPrefix}}img/global/logo-51x44.png" class="opac0"/>
+			</a>
+		</div>
+
+		<!--(bake-end)-->
+
+
+    <!--(bake-start _if="isProject")-->
+			<a href="{{imgPrefix}}index.html">
+				<div class="menuBtn col s2 topset-0"><p>Home</p></div>
+			</a>
+			<div class="menuBtn col s2 topset-0"><p>Contact</p></div>
+
+			<div class="col s4 topset-0 center">
+				<a href="{{imgPrefix}}">
+					<img id="globalLogoSml" src="" data-src="{{imgPrefix}}img/global/logo-51x44.png" class="opac0"/>
+				</a>
+			</div>
+
+			<div class="menuBtn col s2 topset-0"><p>Previous</p></div>
+			<div class="menuBtn col s2 topset-0"><p>Next</p></div>
+    <!--(bake-end)-->
+
+	</div>
+
+	<div class="menuBtn col s2 offset-s2 topset-0 contactBtn">
+		<p>Say Hi</p>
+		<div class="contactExpand">
+			<p class="textCurser">steveo@stephenutting.com</p>
+			<a href="mailto:steveo@stephenutting.com"><p class="hoverRed">or use a mailTo</p></a>
+			<a href="{{imgPrefix}}docs/Stephen_Utting_CV_latest.pdf" target="_blank"><p class="hoverRed">maybe even check out my CV</p></a>
+		</div>
+	</div>
+
+
+	<div class="headerLockup col s6 center">
+		<a href="{{imgPrefix}}">
+			<div id="headerTitleContainer">
+				<img id="globalLogoLrg" src="" data-src="{{imgPrefix}}img/global/logo.png"/>
+				<div class="headerCopy">
+					<h1 class="headerTitle">Stephen Utting</h1>
+					<h2 class="headerSubtitle">Creative Developer</h2>
+				</div>
+			</div>
+		</a>
+	</div>
+</header>

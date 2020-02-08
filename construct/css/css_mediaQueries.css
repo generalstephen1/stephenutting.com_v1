@@ -1,0 +1,69 @@
+@media screen and (max-width: 800px) {
+  #footer {
+    height: 13em;
+  }
+  #footer .footerImage {
+    width: 9em;
+  }
+  .socialIcon {
+    width: 60px;
+    height: 60px;
+    margin-right: -26px;
+  }
+  .socialIcon#githubBtn {
+    margin-top: 34px;
+  }
+  .headerTitle {
+    font-size: 2rem;
+  }
+  .headerSubtitle {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .skillname {
+    font-size: 0.5rem;
+  }
+  .headerTitle,
+  .headerSubtitle {
+    text-align: center;
+  }
+  .headerCopy,
+  #globalLogoLrg {
+    float: none;
+  }
+  .headerCopy {
+    width: 100%;
+  }
+  #headerTitleContainer {
+    margin: 0;
+  }
+  .headerLockup {
+    width: 100%;
+  }
+  #footer {
+    background-image: none;
+    height: 33em;
+  }
+  #footer .footerImage {
+    width: 10em;
+  }
+  #footer .s4 {
+    width: 100%;
+    height: auto;
+  }
+  #footer .s4 .footerImage {
+    margin: 5%;
+    width: 8em;
+  }
+  #footer .s4 .socialIcon {
+    min-height: 4em;
+    min-width: 4em;
+    margin: 1em 0;
+  }
+  #footer .s4 .socialIcon-container {
+    margin: 5% 15%;
+    min-height: 8em;
+    width: 100%;
+  }
+}

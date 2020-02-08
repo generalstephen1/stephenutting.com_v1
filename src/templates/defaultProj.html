@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	  <title>Steve Utting</title>
+
+	  <!-- CSS  -->
+
+		<!--(if target dev)><!-->
+			<!--(bake globalStyles.html stylePrefix="../../")-->
+		<!--<!(endif)-->
+		<!--(if target dist)>
+			<link rel="stylesheet" href="../../All.min.css">
+		<!(endif)-->
+
+		<style>
+			header{
+				background-color: {{project_item.coverImgBgColor}};
+				background-image: url("{{project_item.coverImg}}");
+			}
+			.headerTitle, .headerSubtitle {
+				color: {{project_item.headerCopyColour}};
+			}
+			.projBody {
+				background-color: {{project_item.pageBgColor}};
+				color: {{project_item.pageCopyColor}};
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!--(bake pageHeader.html imgPrefix="../../")-->
+		<div class=" fixedBg"></div>
+		<div class="section">
+
+			<div class="projBody s10 container">
+				<h1 class="projTitle-home">{{project_item.title}}</h1>
+				<h2 class="projBlurb-home">{{project_item.summary}}</h2>
+
+				<!--(bake projPg_pageBody.html _foreach="ITEM:project_item.pageOrder")-->
+			</div>
+		</div>
+
+
+		<!--(bake pageFooter.html imgPrefix="../../")-->
+
+
+		<!--(if target dev)><!-->
+			<!--(bake globalScripts.html scriptPrefix="../../")-->
+			<script src="../../js/js_projectMain.js" type="text/javascript"></script>
+		<!--<!(endif)-->
+		<!--(if target dist)>
+			<script src="../../All.min.js" type="text/javascript"></script>
+			<script src="../../Proj.min.js" type="text/javascript"></script>
+		<!(endif)-->
+
+
+
+
+	</body>
+</html>
